@@ -11,7 +11,9 @@ import common.BaseClass
 
 public class SignUp {
 
-
+	UIHelper ui = new UIHelper()
+	
+	
 	@Keyword
 	def genarateSignUpData(int rowNumber) {
 		BaseClass base = new BaseClass()
@@ -39,12 +41,17 @@ public class SignUp {
 	def createNewUser(int rowNumber) {
 		genarateSignUpData(rowNumber)
 
-		WebUI.click(findTestObject('Object Repository/HomePage/btn_SignUp_Login'))
-		WebUI.sendKeys(findTestObject('Object Repository/LoginPage/input_Name'), findTestData('Data Files/SignUpDetails').getValue('Name', rowNumber))
-		WebUI.sendKeys(findTestObject('Object Repository/LoginPage/input_Email'), findTestData('Data Files/SignUpDetails').getValue('EmailAddress', rowNumber))
+		String Name = findTestData('Data Files/SignUpDetails').getValue('Name', rowNumber)
+		String email = findTestData('Data Files/SignUpDetails').getValue('EmailAddress', rowNumber)
+		
+		ui.click(findTestObject('Object Repository/HomePage/btn_SignUp_Login'))
+		ui.setText(findTestObject('Object Repository/LoginPage/input_Name'), Name)
+		ui.setText(findTestObject('Object Repository/LoginPage/input_Email'), email)
 
-		WebUI.click(findTestObject('Object Repository/LoginPage/btn_SignUp'))
+		ui.click(findTestObject('Object Repository/LoginPage/btn_SignUp'))
 		
 		// Write code for fill all form and genarate user and store user login Details in 'LoginDetails' sheet
+		
+		return email
 	}
 }
