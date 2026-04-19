@@ -29,6 +29,9 @@ class TestListener {
 	 */
 	@BeforeTestCase
 	def sampleBeforeTestCase(TestCaseContext testCaseContext) {
+		WebUI.openBrowser('')
+		WebUI.maximizeWindow()
+		WebUI.navigateToUrl(GlobalVariable.ApplicationURL_UI)
 		println testCaseContext.getTestCaseId()
 		println testCaseContext.getTestCaseVariables()
 	}

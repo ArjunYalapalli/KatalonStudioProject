@@ -1,7 +1,6 @@
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import common.BaseClass
 
-import internal.GlobalVariable
+BaseClass base = new BaseClass()
 
-WebUI.openBrowser('')
-WebUI.navigateToUrl(GlobalVariable.ApplicationURL_UI)
-CustomKeywords.'ui.SignUp.createNewUser'()
+base.signUp.createNewUser(1)
+
