@@ -62,7 +62,7 @@ public class JavaUtils {
 
 	// 🔹 Random Email
 	static String getRandomEmail() {
-		return "user_" + getTimestamp() + "@testmail.com"
+		return "user_" + getTimestamp() + "@gmail.com"
 	}
 
 }
