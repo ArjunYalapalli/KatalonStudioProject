@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>tes action created in helper</description>
+   <name>DemoTest</name>
+   <tag>ui</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>670d7629-a703-4492-ba39-991c23118b91</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,6 @@
+{
+  "maxToolCalls" : 5,
+  "autoToolApproval" : false,
+  "disabledServers" : [ ],
+  "mcpServerSettings" : [ ]
+}

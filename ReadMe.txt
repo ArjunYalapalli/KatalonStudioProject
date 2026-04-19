@@ -1,0 +1,2 @@
+I designed a centralized UIHelper using action wrappers with retry logic, JS fallback, and dynamic locator support. 
+It also supports Shadow DOM using JavaScriptExecutor, which helped stabilize flaky UI tests significantly.

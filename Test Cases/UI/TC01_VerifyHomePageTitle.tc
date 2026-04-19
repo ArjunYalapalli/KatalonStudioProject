@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>After user login verify the page title</description>
+   <name>TC01_VerifyHomePageTitle</name>
+   <tag>ui</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>530a8b1f-f760-4843-ae45-b53a88bcf703</testCaseGuid>
+</TestCaseEntity>
