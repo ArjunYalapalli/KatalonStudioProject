@@ -1,5 +1,6 @@
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
-import common.BaseClass as BaseClass
+
+import common.BaseClass
 import internal.GlobalVariable as GlobalVariable
 
 BaseClass base = new BaseClass()
